@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Acquireium</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-expand-md sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-w.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shopmain.html">Shop</a>
+                        <div class="active-underline me-auto ms-auto"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h3 class="text-white text-center mt-5 mb-5">Our Product</h3>
+
+    <div class="card text-center text-white bg-transparent ms-4 me-4">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shopequip.html">Equipment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white pb-0" href="shopplant.html">Plants</a>
+                    <div class="active-underline me-auto ms-auto mb-2 mt-1"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="shopfish.html">Fish</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title my-3">Equipment</h3>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col" onclick="SeeDetails('product1')" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card p-2 bg-transparent h-100">
+                        <!-- <div class="img-placeholder"></div> -->
+                        <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
+                        <div class="card-body" id="product1">
+                            <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white">Betafish1</h6>
+                            <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
+                                Splendens</p>
+                            <div class="d-flex">
+                                <p class="pt-0 mt-0" id="stock" style="font-size: 14px; color: rgb(181, 180, 180);">
+                                    In Stock</p>
+                                <p class="ms-auto text-white pt-0 mt-0" id="price" style="font-size: 14px;">12000
+                                </p>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" onclick="SeeDetails('product2')" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card p-2 bg-transparent h-100">
+                        <!-- <div class="img-placeholder"></div> -->
+                        <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
+                        <div class="card-body" id="product2">
+                            <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white">Betafish2</h6>
+                            <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
+                                Splendens</p>
+                            <div class="d-flex">
+                                <p class="pt-0 mt-0" id="stock" style="font-size: 14px; color: rgb(181, 180, 180);">
+                                    In Stock</p>
+                                <p class="ms-auto text-white pt-0 mt-0" id="price" style="font-size: 14px;">12000
+                                </p>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" onclick="SeeDetails('product3')" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card p-2 bg-transparent h-100">
+                        <!-- <div class="img-placeholder"></div> -->
+                        <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
+                        <div class="card-body" id="product3">
+                            <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white">Betafish3</h6>
+                            <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
+                                Splendens</p>
+                            <div class="d-flex">
+                                <p class="pt-0 mt-0" id="stock" style="font-size: 14px; color: rgb(181, 180, 180);">
+                                    In Stock</p>
+                                <p class="ms-auto text-white pt-0 mt-0" id="price" style="font-size: 14px;">12000
+                                </p>
+                            </div>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white" data-bs-theme="dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Product Detail</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col col-xl-4 d-flex justify-content-center mb-3">
+                            <img src="" class="rounded-3" id="modalImage" srcset="" height="350px">
+                        </div>
+                        <div class="col col-xl-8">
+                            <div class="row">
+                                <div class="col-3">Name</div>
+                                <div class="col col-1">:</div>
+                                <div class="col" id="mName"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Species</div>
+                                <div class="col col-1">:</div>
+                                <div class="col" id="mSpec"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Stock</div>
+                                <div class="col col-1">:</div>
+                                <div class="col" id="mStock"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Price</div>
+                                <div class="col col-1">:</div>
+                                <div class="col" id="mPrice"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Description</div>
+                                <div class="col col-1">:</div>
+                                <div class="col" id="mDesc">
+                                    <p>The allure of fighting fish often comes from their extravagant display of flowing
+                                        fins which is why they are one of the most globally recognized fish. They have
+                                        been in the aquarium industry since the late 1800s which shows just how
+                                        incredibly popular, they are. Because of their star status, there are now
+                                        hundreds of colours and genetic variations now available in the aquarium hobby
+                                        however the shortfin fighter fish sticks true to its wild ancestry. </p>
+                                    <p>Age 4-6 month</p>
+                                    <p>Male and Female</p>
+                                    <p>5-6 cm</p>
+                                    <p>Fresh Water</p>
+                                    <p>35L Tank or More</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 mb-3">Amount</div>
+                                <div class="col col-1">:</div>
+                                <div class="input-group mb-3 w-25">
+                                    <button class="btn btn-outline-secondary" onclick="sub()" type="button"
+                                        id="button-addon1"><svg width="auto" height="5" viewBox="0 0 448 98" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 48.96C0 21.92 22.08 0 48.96 0H398.56C425.6 0 447.52 22.08 447.52 48.96C447.52 76 425.44 97.92 398.56 97.92H48.96C22.08 97.92 0 75.84 0 48.96Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <input type="text" class="form-control" placeholder=""
+                                        aria-label="Example text with button addon" value="0"
+                                        aria-describedby="button-addon1" readonly id="amount">
+                                    <button class="btn btn-outline-secondary" onclick="add()" type="button"
+                                        id="button-addon2"><svg width="25" height="25" viewBox="0 0 510 510" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M478.125 223.125H286.875V31.875C286.875 23.4212 283.517 15.3137 277.539 9.33598C271.561 3.35826 263.454 0 255 0C246.546 0 238.439 3.35826 232.461 9.33598C226.483 15.3137 223.125 23.4212 223.125 31.875V223.125H31.875C23.4212 223.125 15.3137 226.483 9.33598 232.461C3.35826 238.439 0 246.546 0 255C0 263.454 3.35826 271.561 9.33598 277.539C15.3137 283.517 23.4212 286.875 31.875 286.875H223.125V478.125C223.125 486.579 226.483 494.686 232.461 500.664C238.439 506.642 246.546 510 255 510C263.454 510 271.561 506.642 277.539 500.664C283.517 494.686 286.875 486.579 286.875 478.125V286.875H478.125C486.579 286.875 494.686 283.517 500.664 277.539C506.642 271.561 510 263.454 510 255C510 246.546 506.642 238.439 500.664 232.461C494.686 226.483 486.579 223.125 478.125 223.125Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="proceed()">Proceed to
+                        Purchase <svg class="ms-1" width="20" height="20" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25 0C20.0555 0 15.222 1.46622 11.1108 4.21326C6.99953 6.96029 3.79521 10.8648 1.90302 15.4329C0.0108323 20.0011 -0.484251 25.0277 0.480379 29.8773C1.44501 34.7268 3.82603 39.1814 7.32234 42.6777C10.8187 46.174 15.2732 48.555 20.1227 49.5196C24.9723 50.4843 29.9989 49.9892 34.5671 48.097C39.1352 46.2048 43.0397 43.0005 45.7867 38.8892C48.5338 34.778 50 29.9445 50 25C50 18.3696 47.3661 12.0107 42.6777 7.32233C37.9893 2.63392 31.6304 0 25 0ZM42.2583 25.5917L33.925 33.925C33.7656 34.0615 33.5605 34.1329 33.3508 34.1248C33.1411 34.1167 32.9421 34.0297 32.7937 33.8813C32.6453 33.7329 32.5583 33.5339 32.5502 33.3242C32.5421 33.1145 32.6135 32.9094 32.75 32.75L39.6583 25.8333H8.33334C8.11233 25.8333 7.90037 25.7455 7.74409 25.5893C7.58781 25.433 7.50001 25.221 7.50001 25C7.50001 24.779 7.58781 24.567 7.74409 24.4107C7.90037 24.2545 8.11233 24.1667 8.33334 24.1667H39.6583L32.75 17.2583C32.6135 17.0989 32.5421 16.8938 32.5502 16.6841C32.5583 16.4744 32.6453 16.2754 32.7937 16.127C32.9421 15.9786 33.1411 15.8917 33.3508 15.8836C33.5605 15.8755 33.7656 15.9468 33.925 16.0833L42.2583 24.4167C42.4135 24.5728 42.5007 24.784 42.5007 25.0042C42.5007 25.2243 42.4135 25.4355 42.2583 25.5917Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-xl fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white" data-bs-theme="dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Checkout</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="d-flex flex-column justify-content-center mb-3">
+                                    <div class="">
+                                        <img src="" class="rounded-3" id="pImage" srcset="" width="250px"
+                                            class="ms-auto me-auto mb-3">
+                                    </div>
+                                    <div class="mt-3">
+                                        <p class="fw-bold mt-3">Order Summary</p>
+                                        <div class="row">
+                                            <div class="col-3">Name</div>
+                                            <div class="col col-1">:</div>
+                                            <div class="col" id="pName"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3">Species</div>
+                                            <div class="col col-1">:</div>
+                                            <div class="col" id="pSpec"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3">Price</div>
+                                            <div class="col col-1">:</div>
+                                            <div class="col" id="pPrice"></div>
+                                        </div>
+
+                                        <div class="active-underline mt-3 mb-3"
+                                            style="background-color: grey!important; height: 0.5px!important;"></div>
+
+                                        <div class="row">
+                                            <div class="col-3">Sub-total</div>
+                                            <div class="col col-1">:</div>
+                                            <div class="col" id="pSubTotal"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3">Shipment</div>
+                                            <div class="col col-1">:</div>
+                                            <div class="col"> Rp.25000</div>
+                                        </div>
+                                        <div class="active-underline mt-3 mb-3"
+                                            style="background-color: rgb(93, 93, 93)!important; height: 0.5px !important;">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3">Total</div>
+                                            <div class="col col-1">:</div>
+                                            <div class="col" id="pTotal"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="iName" placeholder="Name..." required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="phone" placeholder="+(62) 8xxxxxxxxx"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Payment Method</label><br />
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment" id="inlineRadio1"
+                                        value="paypal"><svg width="auto" height="30" viewBox="0 0 17 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.419 1.50257C13.4937 0.450884 11.821 0 9.68124 0H3.47093C3.25921 7.81709e-06 3.05444 0.0753265 2.89344 0.212415C2.73243 0.349503 2.62575 0.539368 2.59257 0.747875L0.00671035 17.1017C-0.0446881 17.4242 0.20573 17.7162 0.533511 17.7162H4.36754L5.33043 11.626L5.30055 11.8167C5.36915 11.3863 5.73837 11.0687 6.17559 11.0687H7.99751C11.5767 11.0687 14.3792 9.61907 15.1979 5.4255C15.2222 5.30147 15.2432 5.18076 15.2614 5.06282C15.1581 5.00826 15.1581 5.00826 15.2614 5.06282C15.5052 3.51284 15.2598 2.45778 14.419 1.50257Z"
+                                            fill="#27346A" />
+                                        <path
+                                            d="M6.79748 4.50446C6.9023 4.4547 7.01694 4.4289 7.13303 4.42897H12.0018C12.5783 4.42897 13.1161 4.46639 13.6075 4.54525C13.745 4.56712 13.8818 4.59322 14.0177 4.62353C14.2103 4.66591 14.4007 4.71777 14.5881 4.77894C14.8297 4.8594 15.0547 4.9531 15.2615 5.06282C15.5052 3.51224 15.2598 2.45778 14.419 1.50257C13.4932 0.450883 11.821 0 9.68124 0H3.47039C3.03311 0 2.6611 0.317453 2.59257 0.747875L0.00671071 17.1011C-0.0446877 17.4241 0.20573 17.7158 0.53298 17.7158H4.36754L6.36524 5.08322C6.38488 4.95905 6.43449 4.8415 6.50978 4.74068C6.58508 4.63987 6.68381 4.5588 6.79748 4.50446Z"
+                                            fill="#27346A" />
+                                        <path
+                                            d="M15.1977 5.42542C14.379 9.6184 11.5765 11.0687 7.9973 11.0687H6.17484C5.73763 11.0687 5.36834 11.3862 5.30041 11.8167L4.1025 19.3891C4.05775 19.6713 4.27662 19.9271 4.56297 19.9271H7.79496C7.9801 19.927 8.15914 19.8611 8.2999 19.7412C8.44065 19.6212 8.53388 19.4552 8.56281 19.2728L8.59429 19.1086L9.20343 15.2589L9.24268 15.0461C9.27161 14.8638 9.36483 14.6977 9.50557 14.5778C9.64631 14.4579 9.82534 14.392 10.0105 14.3919H10.4942C13.625 14.3919 16.0765 13.1236 16.7929 9.4553C17.092 7.92233 16.9372 6.64246 16.1462 5.74347C15.9063 5.47118 15.6083 5.2463 15.2612 5.06274C15.2424 5.18128 15.222 5.3014 15.1977 5.42542Z"
+                                            fill="#2790C3" />
+                                        <path
+                                            d="M14.4043 4.72212C14.2767 4.68495 14.1478 4.65204 14.018 4.62345C13.882 4.59364 13.7453 4.56772 13.6078 4.54571C13.1159 4.46631 12.5785 4.42883 12.0014 4.42883H7.13326C7.01708 4.42857 6.90235 4.45459 6.79771 4.50492C6.68391 4.55909 6.58507 4.64011 6.50974 4.74095C6.43441 4.8418 6.38487 4.95943 6.36541 5.08367L5.33066 11.626L5.30078 11.8167C5.36885 11.3862 5.73807 11.0687 6.17535 11.0687H7.9978C11.577 11.0687 14.3794 9.61899 15.1981 5.42543C15.2225 5.3014 15.2429 5.18121 15.2617 5.06275C15.0544 4.95362 14.83 4.85932 14.5884 4.7794C14.5274 4.75924 14.4661 4.74014 14.4044 4.72212"
+                                            fill="#1F264F" />
+                                    </svg>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment" id="inlineRadio2"
+                                        value="mastercard"><svg width="auto" height="30" viewBox="0 0 24 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.2449 13.2473H8.75488V1.58435H15.2449V13.2473Z" fill="#FF5F00" />
+                                        <path
+                                            d="M9.167 7.41637C9.16602 6.29321 9.42058 5.18456 9.9114 4.17432C10.4022 3.16409 11.1164 2.27877 12 1.58537C10.9059 0.725492 9.59187 0.190775 8.20821 0.0423262C6.82456 -0.106123 5.42704 0.137683 4.17539 0.745883C2.92374 1.35408 1.86843 2.30214 1.13008 3.48171C0.391732 4.66127 0.000119671 6.02477 0 7.41637C0.000267045 8.80779 0.391926 10.1711 1.13023 11.3505C1.86853 12.5299 2.9237 13.4778 4.17517 14.086C5.42665 14.6941 6.82396 14.938 8.20746 14.7897C9.59096 14.6414 10.9048 14.1069 11.999 13.2474C11.1157 12.5538 10.4018 11.6684 9.91115 10.6582C9.42051 9.64797 9.16605 8.53941 9.167 7.41637Z"
+                                            fill="#EB001B" />
+                                        <path
+                                            d="M24 7.41637C23.9999 8.80796 23.6083 10.1715 22.8699 11.351C22.1316 12.5306 21.0763 13.4786 19.8246 14.0868C18.573 14.695 17.1754 14.9389 15.7918 14.7904C14.4081 14.642 13.0941 14.1072 12 13.2474C13.725 11.8894 14.833 9.78237 14.833 7.41637C14.833 5.05037 13.725 2.94337 12 1.58537C13.0941 0.725492 14.4081 0.190775 15.7918 0.0423262C17.1754 -0.106123 18.573 0.137683 19.8246 0.745883C21.0763 1.35408 22.1316 2.30214 22.8699 3.48171C23.6083 4.66127 23.9999 6.02477 24 7.41637Z"
+                                            fill="#F79E1B" />
+                                    </svg>
+
+                                </div>
+                                <div class="form-check form-check-inline justify-content-center align-items-center">
+                                    <input class="form-check-input" type="radio" name="payment" id="inlineRadio3"
+                                        value="applepay">
+                                    <svg width="auto" height="35" viewBox="0 0 29 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.20381 1.854C3.65381 1.892 4.10381 1.626 4.38581 1.287C4.66281 0.941 4.84581 0.472 4.80081 0C4.39981 0.019 3.90881 0.266 3.62781 0.613C3.36781 0.909 3.14681 1.397 3.20381 1.854ZM2.08981 8.046C2.58781 8.027 2.78381 7.719 3.38381 7.719C3.98781 7.719 4.16381 8.046 4.68881 8.039C5.23281 8.028 5.57381 7.545 5.90681 7.049C6.142 6.69784 6.32523 6.31455 6.45081 5.911C6.43981 5.9 5.40081 5.496 5.38881 4.278C5.37781 3.258 6.21081 2.774 6.24681 2.744C5.77781 2.036 5.04681 1.96 4.79181 1.941L4.79381 1.942C4.14081 1.903 3.58281 2.318 3.27481 2.318C2.95981 2.318 2.48781 1.96 1.96981 1.971C1.29981 1.983 0.676809 2.368 0.335809 2.98C-0.369191 4.209 0.151809 6.025 0.833809 7.026C1.16781 7.52 1.56481 8.065 2.08981 8.046ZM14.2498 4.187H15.2738C15.3598 3.73 15.7758 3.429 16.3468 3.429C17.0408 3.429 17.4308 3.756 17.4308 4.361V4.772L16.0138 4.86C14.6978 4.94 13.9848 5.488 13.9848 6.439C13.9888 7.398 14.7228 8.037 15.7768 8.038C16.4898 8.038 17.1498 7.673 17.4488 7.091H17.4708V7.982H18.5208V4.29C18.5208 3.221 17.6768 2.528 16.3798 2.528C15.1758 2.528 14.2848 3.227 14.2498 4.187ZM17.4348 5.973C17.4348 6.666 16.8528 7.16 16.0848 7.16C15.4808 7.16 15.0948 6.863 15.0948 6.414C15.0948 5.945 15.4658 5.676 16.1748 5.634L17.4348 5.554V5.973ZM8.55781 0.563V7.981H9.69381V5.446H11.2648C12.7008 5.446 13.7058 4.445 13.7058 2.999C13.7058 1.553 12.7168 0.563 11.3018 0.563H8.55781ZM12.5518 3.003C12.5518 3.939 11.9898 4.48 10.9988 4.48H9.69381V1.534H11.0028C11.9888 1.534 12.5518 2.066 12.5518 3.003ZM21.4868 6.98L20.1518 2.6H18.9668L20.8868 8.001L20.7818 8.328C20.6088 8.883 20.3278 9.101 19.8258 9.101C19.7358 9.101 19.5638 9.09 19.4918 9.082V9.973C19.5598 9.989 19.8418 10 19.9278 10L19.9268 9.998C21.0328 9.998 21.5538 9.568 22.0088 8.27L23.9998 2.6H22.8448L21.5098 6.98H21.4868Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-target="#exampleModal"
+                        data-bs-toggle="modal">Back</button>
+                    <button type="button" class="btn btn-primary" onclick="success()">Proceed <svg class="ms-1"
+                            width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25 0C20.0555 0 15.222 1.46622 11.1108 4.21326C6.99953 6.96029 3.79521 10.8648 1.90302 15.4329C0.0108323 20.0011 -0.484251 25.0277 0.480379 29.8773C1.44501 34.7268 3.82603 39.1814 7.32234 42.6777C10.8187 46.174 15.2732 48.555 20.1227 49.5196C24.9723 50.4843 29.9989 49.9892 34.5671 48.097C39.1352 46.2048 43.0397 43.0005 45.7867 38.8892C48.5338 34.778 50 29.9445 50 25C50 18.3696 47.3661 12.0107 42.6777 7.32233C37.9893 2.63392 31.6304 0 25 0ZM42.2583 25.5917L33.925 33.925C33.7656 34.0615 33.5605 34.1329 33.3508 34.1248C33.1411 34.1167 32.9421 34.0297 32.7937 33.8813C32.6453 33.7329 32.5583 33.5339 32.5502 33.3242C32.5421 33.1145 32.6135 32.9094 32.75 32.75L39.6583 25.8333H8.33334C8.11233 25.8333 7.90037 25.7455 7.74409 25.5893C7.58781 25.433 7.50001 25.221 7.50001 25C7.50001 24.779 7.58781 24.567 7.74409 24.4107C7.90037 24.2545 8.11233 24.1667 8.33334 24.1667H39.6583L32.75 17.2583C32.6135 17.0989 32.5421 16.8938 32.5502 16.6841C32.5583 16.4744 32.6453 16.2754 32.7937 16.127C32.9421 15.9786 33.1411 15.8917 33.3508 15.8836C33.5605 15.8755 33.7656 15.9468 33.925 16.0833L42.2583 24.4167C42.4135 24.5728 42.5007 24.784 42.5007 25.0042C42.5007 25.2243 42.4135 25.4355 42.2583 25.5917Z"
+                                fill="white" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white" data-bs-theme="dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Order Success</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" id="check" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd" stroke="#198754" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1">
+                            <path d="M21 10.07V11a10 10 0 1 1-5.93-9.14"></path>
+                            <path d="M22 2 11 13l-3-3"></path>
+                        </g>
+                    </svg>
+
+                    <h4>Order Success</h4>
+                    <p class="text-center" style="font-size: 14px;">Your Order Had Been Sucessfully Made. The Invoice
+                        and Detail of This Order had Been sent to your Email. Thank you for shopping with us!</p>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

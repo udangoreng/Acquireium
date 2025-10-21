@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0 0 0 0;
+    height: 100%;
+    min-height: 100vh;
+    font-family: Montserrat;
+    color: white;
+    background: linear-gradient(to bottom right, #140a43, #080c6c, #020115);
+    overflow-x: hidden;
+}
+
+.navbar{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(255, 255, 255, 0.11) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.active-underline{
+    height: 2px;
+    border-radius: 1px;
+    margin-top: -5px;
+    background-color: #ED4800;
+    width: 75%;
+}
+
+.img-placeholder{
+    height: 175px;
+    width: 100%;
+    background-color: grey;
+}
+
+.card img{
+    object-fit: cover;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+}
+
+.section-1 img{
+    margin-top: -50px;
+    margin-left: 900px;
+}
+
+@media screen and (min-width: 787px) {
+    .section-1 img{
+        margin-top: -50px;
+        margin-left: 63vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-1 img{
+        margin-top: -50px;
+        margin-left: 46.875vw;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .section-1 img{
+        margin-top: -50px;
+        margin-left: 48vw;
+    }
+
+}
+
+@media screen and (max-width: 578px) {
+    .section-1 img{
+        margin-top: -50px;
+        margin-left: 67vw;
+        height: 600px;
+    }
+
+}
