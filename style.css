@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     padding: 0;
     margin: 0 0 0 0;
     height: 100%;
@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
 }
 
-.navbar{
+.navbar {
     margin-top: 20px;
     margin-left: 5%;
     margin-right: 5%;
@@ -23,87 +23,117 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.active-underline{
-    height: 2px;
-    border-radius: 1px;
-    margin-top: -5px;
-    background-color: #ED4800;
-    width: 75%;
-}
+.active-underline {
+        height: 2px;
+        border-radius: 1px;
+        margin-top: -5px;
+        background-color: #ED4800;
+        width: 3rem;
+        margin-left: 0.25rem;
+    }
 
-.img-placeholder{
+.img-placeholder {
     height: 175px;
     width: 100%;
     background-color: grey;
 }
 
-.card img{
+.card img {
     object-fit: cover;
 }
 
-.section{
-    height: 100vh;
+.section {
+    height: 100%;
     width: 100%;
 }
 
-.section-1 img{
+.section-1 img {
     margin-top: -50px;
-    margin-left: 900px;
+    margin-left: 5rem;
 }
 
-.aquarium{
-    position: absolute; 
-    right: -175px; 
+.aquarium {
+    position: absolute;
+    right: -175px;
     margin-top: 120px;
 }
 
-@media screen and (min-width: 787px) {
-    .section-1 img{
-        margin-top: -50px;
-        margin-left: 63vw;
+.paragraph {
+    margin-top: 5rem;
+}
+
+.section-2 {
+    margin-bottom: 37rem;
+}
+
+.product{
+    width: 100%; 
+    height: 445px; 
+    background-size: cover;
+}
+
+.product:hover{
+    transform: translateY(-1.5rem);
+    animation: 2s ease-in-out; 
+}
+
+@media only screen and (max-device-width: 480px) {
+    .section-2 {
+        margin-bottom: 25rem;
     }
 }
 
-@media screen and (min-width: 1080px) {
-    .aquarium{
-        position: absolute; 
-        right: -50px; 
-        margin-top: 120px
+@media only screen and (min-width: 768px) {
+    .section-1 img {
+        margin-top: -50px;
+        margin-left: 1rem;
+    }
+
+    .section-2 {
+        margin-bottom: 10rem;
+    }
+
+    .section h4 {
+        margin-top: 2rem;
+    }
+
+    .paragraph {
+        margin-top: 10rem;
+    }
+
+    .active-underline {
+        height: 2px;
+        border-radius: 1px;
+        margin-top: -5px;
+        background-color: #ED4800;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .section-1 img{
+@media only screen and (min-width: 960px) {
+    .section-1 img {
         margin-top: -50px;
-        margin-left: 46.875vw;
+        margin-left: 6rem;
     }
 
-    .aquarium{
-        position: absolute; 
-        right: -275px; 
-        margin-top: 120px
+    .section-2 {
+        margin-bottom: 15rem;
+    }
+
+    .section-2 img {
+        width: 625px;
     }
 }
 
-@media screen and (max-width: 625px) {
-    .section-1 img{
+@media only screen and (min-width: 1440px) {
+    .section-1 img {
         margin-top: -50px;
-        margin-left: 48vw;
+        margin-left: 12rem;
     }
 
-    .aquarium{
-        position: absolute; 
-        right: -375px; 
-        margin-top: 120px
+    .section h4 {
+        margin-top: 0rem;
     }
-
-}
-
-@media screen and (max-width: 578px) {
-    .section-1 img{
-        margin-top: -50px;
-        margin-left: 67vw;
-        height: 600px;
-    }
-
 }
