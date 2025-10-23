@@ -66,7 +66,7 @@ var products = {
             imgPath: "img/betafish.jpg"
         },
         product2: {
-            name: "Fancy Female Guppy, Pack of 6",
+            name: "Female Guppy (6)",
             price: 15000,
             species:"Poecilia reticulata",
             stock: 50,
@@ -74,36 +74,36 @@ var products = {
             imgPath: "img/guppies.jpg"
         },
         product3: {
-            name: "Fancy Female Guppy, Pack of 6",
-            price: 15000,
-            species:"Poecilia reticulata",
-            stock: 50,
-            description: "Assorted Fancy Female Guppies are a beautiful, easy to care for, vibrant and hardy option for the beginner hobbyist. The males are smaller in size and tend to be more colorful than the feamles. It is not recommended to add multiple males to the aquarium because they can become territorial. They are peaceful fish that will do great in community tanks. Be aware that these are livebearers so when adding females and males that you can end up with more than when you started. This Guppy will eat just about anything offered from frozen freshwater foods to pellets, freeze dried and flakes.",
-            imgPath: "img/guppies.jpg"
+            name: "Opaline Gourami",
+            price: 10000,
+            species:"Trichopodus trichopterus",
+            stock: 75,
+            description: "The opaline gourami (Trichopodus trichopterus) is a beginner-friendly freshwater fish with a lot to offer aquarists of any skill level. Sometimes called the marbled gourami, this fish is not naturally occurring. It’s a product of selective breeding and is considered a distinct variation of the famous three-spot gourami.",
+            imgPath: "img/opaline.jpg"
         },
         product4: {
-            name: "Fancy Female Guppy, Pack of 6",
-            price: 15000,
-            species:"Poecilia reticulata",
-            stock: 50,
-            description: "Assorted Fancy Female Guppies are a beautiful, easy to care for, vibrant and hardy option for the beginner hobbyist. The males are smaller in size and tend to be more colorful than the feamles. It is not recommended to add multiple males to the aquarium because they can become territorial. They are peaceful fish that will do great in community tanks. Be aware that these are livebearers so when adding females and males that you can end up with more than when you started. This Guppy will eat just about anything offered from frozen freshwater foods to pellets, freeze dried and flakes.",
-            imgPath: "img/guppies.jpg"
+            name: "Black Angelfish",
+            price: 2500,
+            species:"Pterophyllum scalare",
+            stock: 12,
+            description: "The Black Angels will help make your aquarium more elegant. The Angelfish are an excellent candidate for planted aquariums and are relatively peaceful. Angelfish are in the cichlid family, which is why they are considered semi-aggressive. They can be territorial especially if they have decided to lay eggs. To reduce the chance of aggression, try adding the Angels to the aquarium last. They do prefer slightly more acidic water conditions. Adding driftwood can help naturally soften the water while also providing a place for the angels to hide. Be sure to feed them a variety of foods that include vegetables and meaty substances.",
+            imgPath: "img/angelfish.jpg"
         },
         product5: {
-            name: "Fancy Female Guppy, Pack of 6",
-            price: 15000,
-            species:"Poecilia reticulata",
-            stock: 50,
-            description: "Assorted Fancy Female Guppies are a beautiful, easy to care for, vibrant and hardy option for the beginner hobbyist. The males are smaller in size and tend to be more colorful than the feamles. It is not recommended to add multiple males to the aquarium because they can become territorial. They are peaceful fish that will do great in community tanks. Be aware that these are livebearers so when adding females and males that you can end up with more than when you started. This Guppy will eat just about anything offered from frozen freshwater foods to pellets, freeze dried and flakes.",
-            imgPath: "img/guppies.jpg"
+            name: "Yellow Cichlid (3)",
+            price: 5000,
+            species:"Labidochromis caeruleus",
+            stock: 34,
+            description: "The Electric Yellow Cichlid will bring a little sunshine into your aquarium. Males typically display spots on their anal fins and are also usually more colorful than the females. However, the males are also usually more aggressive, so we suggest a ratio of 3 to 4 females to one male. They prefer an aquarium with a sandy substrate with lots of hiding spaces. In the wild, the Electric Yellow Cichlids are found in brackish waters, so they will do best in aquariums with a basic pH and low salinity. Use caution when choosing aquarium's size because they can grow to about 6'' long. Be sure to feed a varied diet of meaty foods and pellets that contain vegetable matter.",
+            imgPath: "img/lemon.jpg"
         },
         product6: {
-            name: "Fancy Female Guppy, Pack of 6",
-            price: 15000,
-            species:"Poecilia reticulata",
-            stock: 50,
-            description: "Assorted Fancy Female Guppies are a beautiful, easy to care for, vibrant and hardy option for the beginner hobbyist. The males are smaller in size and tend to be more colorful than the feamles. It is not recommended to add multiple males to the aquarium because they can become territorial. They are peaceful fish that will do great in community tanks. Be aware that these are livebearers so when adding females and males that you can end up with more than when you started. This Guppy will eat just about anything offered from frozen freshwater foods to pellets, freeze dried and flakes.",
-            imgPath: "img/guppies.jpg"
+            name: "Domestic Koi",
+            price: 35000,
+            species:"Cyprinus carpio",
+            stock: 6,
+            description: "Assorted Domestic Koi are known to be especially hardy and are bred within the United States. They come in a variety of colors and patterns, which makes them all the more exciting. Koi can live 25-35 years or more in captivity when properly cared for, and get as large as 3 feet long, so they will need a large space made specifically for koi. They are considered diggers, so use caution when adding plants because they can get uprooted. Use large rocks to help keep the plants anchored down. Feeding many times a day is recommended since they are very active swimmers. Koi are very messy eaters, so be sure to monitor the water quality and perform water changes as needed. They will eat almost any pellet or flake that you offer, but be sure the food has vegetable foods in it. Freshwater food with vegetables will help prevent swim bladder problems.",
+            imgPath: "img/koi.jpg"
         }
     }
 };
@@ -112,7 +112,7 @@ var selectedId = 0;
 var amount = 0;
 var stock;
 var category;
-var currentPage = location.pathname.substring(5);
+var currentPage = location.pathname.split("/").pop();;
 const amountIn = document.getElementById("amount");
 const imgModal = document.getElementById("modalImage");
 const imgModal2 = document.getElementById("pImage");
@@ -138,6 +138,7 @@ function getCategory() {
 
 function getAllProducts() {
     getCategory();
+    console.log(currentPage);
     const currentCategory = products[category];
 
     for (let productId in currentCategory) {
