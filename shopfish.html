@@ -59,12 +59,18 @@
     <div class="card-body">
       <h3 class="card-title my-3">Equipment</h3>
       <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <script>
+          window.onload = function () {
+            getAllProducts();
+          }
+        </script>
+
         <div class="col" onclick="SeeDetails('product1')" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div class="card p-2 bg-transparent h-100">
-            <!-- <div class="img-placeholder"></div> -->
             <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
             <div class="card-body" id="product1">
-              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white">Betafish1</h6>
+              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white" id="name">Betafish1</h6>
               <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
                 Splendens</p>
               <div class="d-flex">
@@ -77,12 +83,12 @@
             </div>
           </div>
         </div>
+
         <div class="col" onclick="SeeDetails('product2')" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div class="card p-2 bg-transparent h-100">
-            <!-- <div class="img-placeholder"></div> -->
             <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
             <div class="card-body" id="product2">
-              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white">Betafish2</h6>
+              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white" id="name">Betafish2</h6>
               <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
                 Splendens</p>
               <div class="d-flex">
@@ -95,12 +101,63 @@
             </div>
           </div>
         </div>
+
         <div class="col" onclick="SeeDetails('product3')" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div class="card p-2 bg-transparent h-100">
-            <!-- <div class="img-placeholder"></div> -->
             <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
             <div class="card-body" id="product3">
-              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white">Betafish3</h6>
+              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white" id="name">Betafish3</h6>
+              <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
+                Splendens</p>
+              <div class="d-flex">
+                <p class="pt-0 mt-0" id="stock" style="font-size: 14px; color: rgb(181, 180, 180);">
+                  In Stock</p>
+                <p class="ms-auto text-white pt-0 mt-0" id="price" style="font-size: 14px;">12000
+                </p>
+              </div>
+              <button class="btn btn-primary w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col" onclick="SeeDetails('product4')" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="card p-2 bg-transparent h-100">
+            <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
+            <div class="card-body" id="product4">
+              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white" id="name">Betafish3</h6>
+              <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
+                Splendens</p>
+              <div class="d-flex">
+                <p class="pt-0 mt-0" id="stock" style="font-size: 14px; color: rgb(181, 180, 180);">
+                  In Stock</p>
+                <p class="ms-auto text-white pt-0 mt-0" id="price" style="font-size: 14px;">12000
+                </p>
+              </div>
+              <button class="btn btn-primary w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col" onclick="SeeDetails('product5')" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="card p-2 bg-transparent h-100">
+            <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
+            <div class="card-body" id="product5">
+              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white" id="name">Betafish3</h6>
+              <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
+                Splendens</p>
+              <div class="d-flex">
+                <p class="pt-0 mt-0" id="stock" style="font-size: 14px; color: rgb(181, 180, 180);">
+                  In Stock</p>
+                <p class="ms-auto text-white pt-0 mt-0" id="price" style="font-size: 14px;">12000
+                </p>
+              </div>
+              <button class="btn btn-primary w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col" onclick="SeeDetails('product6')" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="card p-2 bg-transparent h-100">
+            <img src="img/betafish.jpg" class="card-img-top" alt="betta" height="175px">
+            <div class="card-body" id="product6">
+              <h6 class="card-title text-center fw-bold pb-0 mb-0 text-white" id="name">Betafish3</h6>
               <p class="fw-light fst-italic text-white pt-0 mt-0" id="spec" style="font-size: 14px;">Betta
                 Splendens</p>
               <div class="d-flex">
@@ -372,7 +429,7 @@
     </div>
   </div>
 
-    <div class="footer pt-5 pb-5" style="width: 100%; background-color: #140a43; color: white;">
+  <div class="footer pt-5 pb-5" style="width: 100%; background-color: #140a43; color: white;">
     <div class="footer-content ps-5" style="background-color: #140a43;">
       <div class="container d-flex ms-auto me-auto row pt-5 pb-5">
         <div class="col mb-4">
