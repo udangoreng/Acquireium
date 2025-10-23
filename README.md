@@ -5,7 +5,8 @@
 ![About Us](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 Divananda Ayu Sasikirana | 24051204187 | TIF
-Link Youtube :
+
+Link Youtube : https://youtu.be/sHYSXDnSMxQ?si=C8dm2SoLiJYT3vqi
 
  Acquierium adalah sebuah project untuk memenuhi Penilaian Tengah Semester mata kuliah Pemrograman Berbasis Platform. Project ini berupa sebuah website e-commerce sederhana dengan menggunakan HTML, CSS, dan Javascript sebanyak minimal 3 halaman dengan penggunaan framweork CSS yaitu Bootstrap dan Javascript untuk mendukung interaktivitas dari website. Beberapa Halaman yang ada pada website ini antara lain :
 
